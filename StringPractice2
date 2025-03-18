@@ -1,0 +1,30 @@
+/*
+
+*/
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<string.h>
+struct student {
+	int id;
+	char name[20];	
+	double score;
+};
+typedef struct student Student;
+void printf_Student(Student s);
+Student Max_student(Student s[], int n);
+Student find_student(Student s[], int n, char name[]);
+int main(void) {
+	Student s[3], max;
+	int i;	
+
+	for (i = 0; i < 3; i++) {
+		printf("ID, name, score >> ");
+		scanf("%d %s %lf", &s[i].id, s[i].name, &s[i].score);
+	}
+	for(i=0; i<3; i++)
+		printf_Student(s[i]);
+	max = Max_student(s, 3);
+	printf("The max score student is : \n");
+	printf_Student(max);
+	return 0;
+}
