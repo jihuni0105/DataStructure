@@ -1,3 +1,10 @@
+/*
+내용: srand를 활용한 알고리즘 실습
+실습일: 2025.03.12
+실습자: 박지훈
+학번: 202010653   
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -17,7 +24,7 @@ void update_score(int score[], int n) {
 
 void print_array(char name, int score[], int n) {
    int i;
-   printf("\n Update array %c score \n, name");
+   printf("\n Update array %c score \n", name);
    for (i = 0; i < n; i++) {
       printf("\t%d", score[i]);
    }
