@@ -1,3 +1,10 @@
+/*
+내용: 최댓값 비교 및 배열의 원소값 변경
+실습일: 2025.03.12
+실습자: 박지훈
+학번: 202010653
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
